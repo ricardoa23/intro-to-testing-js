@@ -8,5 +8,5 @@ function helloWorld() {
 // }
 
 function sayHello(input) {
-return input;
+return '';
 }
