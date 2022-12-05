@@ -20,6 +20,11 @@ function helloWorld() {
 // }
 
 function sayHello(input) {
-
     return (typeof input === 'string') ? `Hello, ${input}!` : 'Hello, World!';
+}
+
+console.log(isFive('5'))
+
+function isFive(num) {
+    return parseInt(num) === 5;
 }
