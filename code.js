@@ -38,8 +38,7 @@ function isEven(num) {
 function isVowel(input) {
     if (typeof (input) === 'string') {
         input = input.toLowerCase()
-        console.log(`prior conditional ${input}`);
-        let result = (input === 'a' || input === 'e' || input === 'i' || input === 'o' || input === 'u') ? true : false;
+        let result = (input === 'a' || input === 'e' || input === 'i' || input === 'o' || input === 'u');
         return result;
     } else {
         return false;
@@ -47,3 +46,21 @@ function isVowel(input) {
 }
 isVowel('A')
 console.log(isVowel('A'))
+
+//add
+
+function add(input1, input2) {
+    input1 = parseFloat(input1);
+    input2 = parseFloat(input2);
+    let result = input1 + input2
+    if (typeof (input1) === 'number' && typeof (input2) === 'number') {
+        return result;
+    } else {
+        return NaN;
+    }
+}
+
+console.log(add('banana', 'split'));
+
+
+console.log(isNaN(4))
